@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: url(../images/red.png) fixed; */
+  background-color: #0b0b0b;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.techviz {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: -6px;
+  text-transform: uppercase;
+  font-size: 4.4rem;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  color: #f1722e;
+  cursor: pointer;
+  font-family: Neue Montreal;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+  top: 4%;
+  right: 4%;
+}
+
+.btm-text {
+  font-size: 2.2rem;
+  font-family: "Neue Montreal";
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+.btm-text span {
+  font-family: garamond;
+  font-style: italic;
+  padding: 0em 4px;
+}
+
+.bottomText {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff8543;
+  cursor: pointer;
+}
+
+.bottomText p {
+  font-family: Neue Montreal;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+.bottomText ion-icon {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottomText:hover ion-icon {
+  opacity: 1;
+  transform: translateY(-5px);
+}

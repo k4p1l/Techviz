@@ -1,0 +1,161 @@
+@font-face {
+  font-family: sk;
+  src: url(../../public/font/SKCuber-Expanded.ttf);
+}
+@font-face {
+  font-family: Product Sans;
+  src: url(../../public/font/Product\ Sans\ Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  position: relative;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  top: 0;
+  left: 0;
+  font-family: Arame;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 10px 20px 10px 4px;
+}
+
+.link ion-icon {
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.link:hover ion-icon {
+  opacity: 1;
+  transform: translateX(8px);
+}
+
+.link:hover {
+  color: #2a27e2;
+}
+
+.contact-us {
+  font-family: Arame;
+  font-weight: bold;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  padding: 40px 40px 0px 40px;
+  font-size: 3rem;
+  color: #2a27e2;
+}
+
+.cu-form {
+  align-items: center;
+  padding: 0.25rem 24rem;
+  color: #2a27e2;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 500px;
+  padding: 8px 8px 0px 8px;
+}
+
+.label {
+  font-family: Arame;
+  font-size: 1.4rem;
+  letter-spacing: -0.4px;
+}
+
+.cu-input {
+  text-transform: none;
+  border: 1px solid rgba(42, 39, 226, 0.4);
+  border-radius: 0.2em;
+  width: 100%;
+  min-width: 500px;
+  height: auto;
+  padding: 0.6em 1em 0.6em 0.6em;
+  font-family: Arame;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  letter-spacing: -0.2px;
+}
+
+.cu-input:focus {
+  outline: 1px solid #2a27e2;
+}
+
+.submit-btn {
+  background-color: #2a27e2;
+  color: white;
+  padding: 0.5em 0.2em;
+  font-size: 20px;
+  border-radius: 0.25em;
+  min-width: 500px;
+  width: 100%;
+  font-family: sk;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+
+.submit-btn:active {
+  background-color: #fff;
+  color: #2220b9;
+}
+
+.submit-btn p {
+  margin-bottom: 4px;
+}
+
+.submit-btn ion-icon {
+  font-size: 24px;
+  margin-top: 6px;
+  opacity: 0;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+}
+
+.submit-btn:hover ion-icon {
+  opacity: 1;
+  transform: translateX(-10px) scale(1.1);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 40px;
+  font-family: Product Sans;
+  font-size: 16px;
+}
+
+img {
+  margin-right: -3px;
+}
+
+.footer span {
+  letter-spacing: -0.4px;
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  font-family: Product Sans;
+  font-weight: bold;
+  padding: 0px 4px;
+}

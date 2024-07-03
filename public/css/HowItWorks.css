@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container3 {
+    height: 100vh;
+    position: relative;
+    color: #764c8a;
+    overflow: hidden;
+  }
+.modeList1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  top: 220px;
+  left: 260px;
+  padding: 0.5em 1em;
+}
+
+.modeList2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  top: 300px;
+  left: 260px;
+  padding: 0.5em 1em;
+}
+
+.modeList3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  top: 380px;
+  left: 260px;
+  padding: 0.5em 1em;
+}
+
+.mode {
+  font-family: "Arame";
+  font-size: 1.6em;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.infoBox {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 0.8em 1em;
+  border-radius: 16px;
+  width: 560px;
+  color: #5f3472;
+  z-index: 1;
+  opacity: 0; 
+  pointer-events: none; 
+  font-size: 1em;
+}
+
+.infoBox p {
+  font-size: 0.88em;
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.mode:hover .infoBox {
+  display: block;
+  pointer-events: all;
+}
+
