@@ -24,7 +24,7 @@ const PageTransition = ({ children }) => {
         </motion.div>
       </AnimatePresence>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={`background-${pathname}`}
           className="slide-in"
