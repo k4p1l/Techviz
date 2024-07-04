@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { data } from "../app/data";
 import gsap from "gsap";
-import img from "../../public/images/Untitled.png";
-import Image from "next/image";
+// import img from "../../public/images/Untitled.png";
 import "../../public/css/Solution.css";
+import Image from "next/image";
 
 const TheSolution = () => {
   const [overlayOpened, setOverlayOpened] = useState(false);
@@ -123,14 +123,21 @@ const TheSolution = () => {
               : "Lorem ipsum dolor sit amet..."}
           </p>
         </div>
-        <div className="img-container">
-          <Image
-            className="w-full h-full object-cover"
-            src={img}
-            id="item-img"
-            alt=""
-          />
-        </div>
+        {selectedItem && (
+          <div className="img-container">
+            <Image
+              className="w-full h-full object-cover"
+              src={selectedItem ? selectedItem.itemImage : "hey"}
+              id="item-img"
+              width={500}
+              height={500}
+              loading="eager"
+              layout="responsive"
+              
+              alt=""
+            />
+          </div>
+        )}
       </div>
       <div className="s-container">
         <div className="items">

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import "../../public/css/Home.css";
 import img from "../../public/images/Untitled.png";
 import { useScroll, useTransform, motion, easeInOut } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 import About from "./about/page";
 import HowItWorks from "./howitworks";
@@ -23,12 +23,18 @@ export default function Home() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.05,
-      duration: 0.6,
+      duration: 3.2,
+      easing: (t) => Math.min(2, 1.001 - Math.pow(2, -10 * t)),
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smooth: true,
+      mouseMultiplier: 0.5,
+      smoothTouch: false,
+      touchMultiplier: 0.8,
+      infinite: false,
     });
 
-    console.log(lenis); // Check lenis object
-    console.log(lenis.easing); // Check how easing is accessed
+    console.log(lenis.lerp); // Check how easing is accessed
 
     function raf(time) {
       lenis.raf(time);
@@ -83,11 +89,17 @@ const Section1 = ({ scrollYProgress }) => {
           </p>
         </div>
         <div className="absolute links">
-          <a className="wave-link" href="">
-            Download
+          <a className="underlinee" href="">
+            <span>Download</span>
+            <svg viewBox="0 0 20 27">
+              <polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" />
+            </svg>
           </a>
-          <a onClick={navigateToForm} className="wave-link">
-            Contact Us
+          <a onClick={navigateToForm} className="underlinee">
+            <span>Contact Us</span>
+            <svg viewBox="0 0 20 27">
+              <polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" />
+            </svg>
           </a>
         </div>
 

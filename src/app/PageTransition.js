@@ -6,7 +6,7 @@ const PageTransition = ({ children }) => {
   const pathname = usePathname();
   const transition = {
     type: "tween",
-    duration: 0.2,
+    duration: 0.8,
     ease: "easeIn",
   };
 
@@ -17,7 +17,7 @@ const PageTransition = ({ children }) => {
           key={pathname}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          exit={{ opacity: 1 }}
           transition={transition}
         >
           {children}
@@ -28,18 +28,18 @@ const PageTransition = ({ children }) => {
         <motion.div
           key={`background-${pathname}`}
           className="slide-in"
-          initial={{ scaleY: 1 }}
-          animate={{ scaleY: 0 }}
-          exit={{ scaleY: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ scaleX: 1 }}
+          animate={{ scaleX: 0 }}
+          exit={{ scaleX: 0 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         ></motion.div>
         <motion.div
           key={`foreground-${pathname}`}
           className="slide-out"
-          initial={{ scaleY: 0 }}
-          animate={{ scaleY: 0 }}
-          exit={{ scaleY: 1 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 0 }}
+          exit={{ scaleX: 1 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         ></motion.div>
       </AnimatePresence>
     </div>
