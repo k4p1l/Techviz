@@ -16,18 +16,30 @@
   }
 }
 
-body {
-  background-color: #fff;
-  background-image: url("../../public/images/red.png");
-  background-repeat: no-repeat;
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@media (max-width: 768px) {
-  body {
-    background-color: #fff;
-    /* background-image: url("../../public/images/red.png"); */
-    /* background-repeat: no-repeat; */
-  }
+input,
+textarea,
+p {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+body {
+  background-color: #fff;
+  background: url("../../public/images/red.png") center top;
+  background-repeat: repeat;
 }
 
 .slide-in,

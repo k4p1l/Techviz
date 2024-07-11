@@ -20,7 +20,7 @@
 
 .form-container {
   position: relative;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   height: 100vh;
   overflow: hidden;
   font-size: 1rem;
@@ -67,8 +67,16 @@
 
 .cu-form {
   align-items: center;
-  padding: 0.25em 24em;
   color: #2a27e2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.25em 1em;
+  align-items: stretch;
+}
+
+.cu-input,
+.submit-btn {
+  width: 100%;
 }
 
 .form-field {
@@ -76,7 +84,6 @@
   flex-direction: column;
   gap: 0.5em;
   width: 100%;
-  min-width: 49em;
   padding: 8px 8px 0px 8px;
 }
 
@@ -91,7 +98,6 @@
   border: 1px solid rgba(42, 39, 226, 0.4);
   border-radius: 0.2em;
   width: 100%;
-  min-width: 500px;
   height: auto;
   padding: 0.6em 1em 0.6em 0.6em;
   font-family: "Arame";
@@ -110,7 +116,6 @@
   padding: 0.5em 0.2em;
   font-size: 20px;
   border-radius: 0.25em;
-  min-width: 500px;
   width: 100%;
   font-family: sk;
   text-align: right;
@@ -170,31 +175,15 @@ img {
   .link {
     font-size: 0.8em;
     padding: 10px 10px 10px 0px;
-    margin-left: -14px;
+    margin-left: -4px;
+  }
+
+  .link ion-icon {
+    font-size: 0.8em;
   }
 
   .contact-us {
     font-size: 2em;
     padding: 0px 20px 0px 20px;
-  }
-
-  .cu-form {
-    padding: 0.25em 26em;
-  }
-
-  .form-field {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 350px;
-  }
-
-  .cu-input {
-    width: 250px;
-    min-width: 280px;
-  }
-
-  .submit-btn {
-    width: 250px;
-    min-width: 280px;
   }
 }
