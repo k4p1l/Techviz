@@ -264,7 +264,7 @@
     font-size: 0.8rem;
     flex-direction: column;
     padding: 10px;
-    padding-top: 80px;
+    padding-top: 40px;
   }
   .col1 {
     flex: 3;
@@ -307,8 +307,8 @@
   }
 
   .box1 p {
-    font-size: 1em;
-    display: none;
+    font-size: 0.88em;
+    /* display: none; */
   }
 
   .box2,
