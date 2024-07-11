@@ -8,6 +8,11 @@
   src: url(../../public/font/NeueMontreal-Bold.otf);
 }
 
+@font-face {
+  font-family: arame;
+  src: url(../../public/font/Arame.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +57,7 @@
 }
 
 .mode {
-  font-family: "Inter";
+  font-family: "Arame";
   font-size: 1.6em;
   letter-spacing: -2px;
   font-weight: bold;
