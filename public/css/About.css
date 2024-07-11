@@ -282,7 +282,7 @@
 
   .row1 {
     display: flex;
-    flex: 5;
+    flex: 4;
   }
 
   .row2 {
@@ -294,6 +294,7 @@
   .box1 {
     padding: 20px 10px 20px 20px;
     gap: 1em;
+    height: 100%;
   }
 
   .box1 h1 {
@@ -348,7 +349,7 @@
   }
 
   .box5 {
-    flex: 2.5;
+    flex: 3;
     border-radius: 20px;
     padding: 0px 20px;
     display: flex;
