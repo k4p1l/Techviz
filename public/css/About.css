@@ -264,7 +264,7 @@
     font-size: 0.8rem;
     flex-direction: column;
     padding: 10px;
-    padding-top: 40px;
+    padding-top: 80px;
   }
   .col1 {
     flex: 3;
@@ -274,7 +274,7 @@
   }
 
   .col2 {
-    flex: 3;
+    flex: 1.4;
     gap: 1em;
     display: flex;
     flex-direction: column;

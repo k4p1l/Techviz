@@ -33,7 +33,7 @@
   gap: 12px;
   top: 0;
   left: 0;
-  font-family: 'Arame';
+  font-family: "Arame";
   font-size: 1em;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -56,7 +56,7 @@
 }
 
 .contact-us {
-  font-family: 'Arame';
+  font-family: "Arame";
   font-weight: bold;
   letter-spacing: -3px;
   text-transform: uppercase;
@@ -81,7 +81,7 @@
 }
 
 .label {
-  font-family: 'Arame';
+  font-family: "Arame";
   font-size: 1.4rem;
   letter-spacing: -0.4px;
 }
@@ -94,7 +94,7 @@
   min-width: 500px;
   height: auto;
   padding: 0.6em 1em 0.6em 0.6em;
-  font-family: 'Arame';
+  font-family: "Arame";
   font-size: 1.2rem;
   line-height: 1.2em;
   letter-spacing: -0.2px;
@@ -168,13 +168,14 @@ img {
 
 @media (max-width: 768px) {
   .link {
+    font-size: 0.8em;
     padding: 10px 10px 10px 0px;
-    margin-left: -14px;
+    margin-left: -18px;
   }
 
   .contact-us {
-    font-size: 2.5em;
-    padding: 60px 20px 0px 20px;
+    font-size: 2em;
+    padding: 0px 20px 0px 20px;
   }
 
   .cu-form {
@@ -184,16 +185,16 @@ img {
   .form-field {
     flex-direction: column;
     gap: 0.5rem;
-    width: 200px;
+    width: 350px;
   }
 
   .cu-input {
-    width: 350px;
-    min-width: 350px;
+    width: 250px;
+    min-width: 280px;
   }
 
   .submit-btn {
-    min-width: 350px;
-    width: 350px;
+    width: 250px;
+    min-width: 280px;
   }
 }

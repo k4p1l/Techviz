@@ -52,6 +52,7 @@ export default function Home() {
 }
 
 const Section1 = ({ scrollYProgress }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   const router = useRouter();
   const navigateToForm = () => {
     router.push("/form");
@@ -67,8 +68,8 @@ const Section1 = ({ scrollYProgress }) => {
   return (
     <motion.div
       id="section1"
-      style={{ scale, rotate }}
-      className="sticky top-0 rounded-2xl overflow-hidden h-screen bg-[#ffe2d2] text-[3.5vw] pb-[10vh]"
+      style={isMobile ? {} : { scale, rotate }}
+      className="will-change-transform sticky top-0 rounded-2xl overflow-hidden h-screen bg-[#ffe2d2] text-[3.5vw] pb-[10vh]"
     >
       {" "}
       <PageTransition>
@@ -112,14 +113,15 @@ const Section1 = ({ scrollYProgress }) => {
 };
 
 const Section2 = ({ scrollYProgress }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
 
   return (
     <motion.div
       id="section2"
-      style={{ scale, rotate }}
-      className="relative overflow-y-hidden overflow-x-hidden   h-[410vh]"
+      style={isMobile ? {} : { scale, rotate }}
+      className="will-change-transform relative overflow-y-hidden overflow-x-hidden   h-[410vh]"
     >
       <Problem />
       <HowItWorks />
