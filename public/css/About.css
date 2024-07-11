@@ -298,18 +298,18 @@
   }
 
   .box1 h1 {
-    font-size: 1.4em;
+    font-size: 1.35em;
     text-wrap: pretty;
     letter-spacing: normal;
   }
 
   .box1 h1 span {
-    font-size: 1.8em;
+    font-size: 1.7em;
     letter-spacing: -2px;
   }
 
   .box1 p {
-    font-size: 1.02em;
+    font-size: 0.95em;
     text-wrap: pretty;
     padding: 5px;
     /* display: none; */
@@ -352,9 +352,9 @@
   }
 
   .box5 {
-    flex: 2.4;
+    flex: 3;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

@@ -112,7 +112,7 @@ h1 #item-name {
 }
 
 .item-index {
-  margin-right: 25px;
+  margin-right: 20px;
   flex: 0.5;
 }
 
@@ -210,5 +210,27 @@ h1 #item-name {
     margin-left: 30px;
     margin-bottom: 8px;
     gap: 0px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em 0em;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Arame";
+  }
+
+  .item-name {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    transition: all 0.2s ease-in;
+  }
+
+  .item-index {
+    margin-right: -5px;
+    flex: 0.5;
   }
 }
