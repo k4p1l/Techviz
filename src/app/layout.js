@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <script
           defer
           async
-          nomodule
+          noModule
           src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
         <script

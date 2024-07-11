@@ -18,6 +18,8 @@
 
 body {
   background-color: #fff;
+  background-image: url("../../public/images/red.png");
+  background-repeat: no-repeat;
 }
 
 .slide-in,
@@ -25,41 +27,39 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: right;
-  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 24px;
 }
 
-.slide-in {
-  background-color: #1b1bff; /* Change this to your preferred color */
-  z-index: 2;
-}
-
+.slide-in,
 .slide-out {
-  background-color: #1b1bff; /* Change this to your preferred color */
+  background-color: rgb(27, 27, 255); /* Change this to your preferred color */
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 255, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  /* background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/40550ab9-0dde-4376-ae73-77355bb45d73/d37pwfa-82dd8ce8-a772-4e1d-9f03-e355a2aa1722.jpg/v1/fill/w_1024,h_768,q_75,strp/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvNDA1NTBhYjktMGRkZS00Mzc2LWFlNzMtNzczNTViYjQ1ZDczXC9kMzdwd2ZhLTgyZGQ4Y2U4LWE3NzItNGUxZC05ZjAzLWUzNTVhMmFhMTcyMi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SS6BpDtRHP9Z2ROaHftKv8hr6_LhiVjOB8i0WiXuyKw); */
+  opacity: 0.9;
+  background-image: url(../../public/images/noise.png) repeat;
+  mix-blend-mode: overlay;
+  overflow: hidden;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  /* background-size: 30px; */
+}
+/* 
+.slide-out {
+  background-color: #1b1bff;
   z-index: 3;
   transform-origin: left;
-}
-
-.page-content {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.transition-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 100;
-}
-
-.transition-background {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #3494e6, #ec6ead);
-}
-
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0.2)
+  );
+} */

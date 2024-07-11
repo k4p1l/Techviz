@@ -14,7 +14,7 @@ const About = () => {
     router.push("/form");
   };
   return (
-    <div className="h-[110vh] p-16 pt-32 a-container bg-white flex gap-4 relative ">
+    <div className="h-[110vh] a-container bg-white flex gap-4 relative ">
       <div className="col1 w-full h-full flex flex-col">
         <div className="row1 w-full bg-[#eff4ff]">
           <div className="box1">

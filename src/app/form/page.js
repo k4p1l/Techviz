@@ -12,7 +12,7 @@ const FormPage = () => {
             <ion-icon name="arrow-back-sharp"></ion-icon> Go back
           </h1>
         </a>
-        <h1 className="text-center text-2xl mb-8 contact-us">Contact Us</h1>
+        <h1 className="text-center mb-8 contact-us">Contact Us</h1>
 
         <form
           className="flex flex-col gap-8 cu-form "
@@ -64,10 +64,12 @@ const FormPage = () => {
               name="entry.1166974658"
             />
           </div>
-          <button className="submit-btn" type="submit">
-            <p>Submit</p>
-            <ion-icon name="arrow-forward-sharp"></ion-icon>
-          </button>
+          <div className="form-field">
+            <button className="submit-btn" type="submit">
+              <p>Submit</p>
+              <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </button>
+          </div>
         </form>
         <div className="footer">
           Powered By <span>Google</span> Forms

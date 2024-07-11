@@ -15,10 +15,10 @@ const PageTransition = ({ children }) => {
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={pathname}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 1 }}
-          transition={transition}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // exit={{ opacity: 1 }}
+          // transition={transition}
         >
           {children}
         </motion.div>
@@ -28,20 +28,22 @@ const PageTransition = ({ children }) => {
         <motion.div
           key={`background-${pathname}`}
           className="slide-in"
-          initial={{ scaleX: 1 }}
-          animate={{ scaleX: 0 }}
-          exit={{ scaleX: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ x: "0vw" }}
+          animate={{ x: "100vw" }}
+          exit={{ x: "100vw" }}
+          transition={{ duration: 3.2, ease: "anticipate" }}
         ></motion.div>
+      </AnimatePresence>
+      {/* <AnimatePresence mode="wait" >
         <motion.div
           key={`foreground-${pathname}`}
           className="slide-out"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 0 }}
-          exit={{ scaleX: 1 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ x: "0vw" }}
+          animate={{ x: "100vw" }}
+          exit={{ x: "200vw" }}
+          transition={{ duration: 1, ease: "easeInOut" }}
         ></motion.div>
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };

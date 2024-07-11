@@ -17,6 +17,7 @@
     #fff,
     #fff 100%
   );
+  font-size: 1rem;
 }
 
 h1 #item-name {
@@ -113,7 +114,7 @@ h1 #item-name {
   overflow-y: auto;
   z-index: 2;
   will-change: bottom;
-  transform: translateZ(0) rotate(10deg);
+  transform: translateZ(0) rotate(0deg);
   transform-origin: bottom bottom;
   font-family: Arame;
   border-radius: 2px;
@@ -141,7 +142,7 @@ h1 #item-name {
   cursor: pointer;
   opacity: 0.6;
   font-size: 0.6em;
-  transition: all 0.12s ease-in;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +159,7 @@ h1 #item-name {
 }
 
 #close-btn ion-icon {
-  transition: all 0.12s ease-in;
+  transition: all 0.2s ease;
 }
 
 .item-details {
@@ -177,14 +178,22 @@ h1 #item-name {
   padding: 0em 2em;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .items {
     width: 100%;
     padding-bottom: 1em;
   }
 
   .overlay {
+    position: absolute;
     width: 100%;
     height: 100vh;
+    padding: 1em;
+  }
+
+  #close-btn {
+    margin-left: 30px;
+    margin-bottom: 8px;
+    gap: 0px;
   }
 }

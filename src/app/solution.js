@@ -30,11 +30,11 @@ const TheSolution = () => {
     tlRef.current = gsap
       .timeline({ paused: true, reversed: true })
       .to(overlay, {
-        duration: 0.5,
+        duration: 0.8,
         right: "0px",
         rotation: 0,
         transformOrigin: "bottom bottom",
-        ease: "power3.inOut",
+        ease: "back.inOut",
       });
 
     items.forEach((item, index) => {
@@ -133,7 +133,6 @@ const TheSolution = () => {
               height={500}
               loading="eager"
               layout="responsive"
-              
               alt=""
             />
           </div>

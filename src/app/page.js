@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className=" relative h-[510vh]">
+    <div className="relative h-[510vh]">
       <main ref={container} className="relative h-[200vh]">
         <Element className="sticky top-0 rounded-2xl h-screen" name="section1">
           <Section1 scrollYProgress={scrollYProgress} />
@@ -75,11 +75,15 @@ const Section1 = ({ scrollYProgress }) => {
     <motion.div
       id="section1"
       style={{ scale, rotate }}
-      className="sticky top-0 rounded-2xl h-screen bg-[#ffe2d2] text-[3.5vw] pb-[10vh]"
+      className="sticky top-0 rounded-2xl overflow-hidden h-screen bg-[#ffe2d2] text-[3.5vw] pb-[10vh]"
     >
       {" "}
       <PageTransition>
-        <Image className="w-full h-full object-contain z-0" src={img} alt="" />
+        <Image
+          className="w-full h-full prod-img object-contain z-0"
+          src={img}
+          alt=""
+        />
         <div className="content absolute top-2 left-6 ">
           <h1 className="techviz z-50 text-[#ff8543]">TECHVIZ</h1>
           <p className="text-[#ff8543] btm-text">
