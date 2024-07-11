@@ -12,9 +12,11 @@ import Problem from "./problem";
 import TheSolution from "./solution";
 import { Link, Element } from "react-scroll";
 import PageTransition from "./PageTransition";
+import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
   const container = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const { scrollYProgress } = useScroll({
     target: container,
@@ -22,15 +24,18 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const lenis = new Lenis({});
-
-    function raf(time) {
-      lenis.raf(time);
+    if (!isMobile) {
+      const lenis = new Lenis();
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
       requestAnimationFrame(raf);
+      return () => {
+        lenis.destroy();
+      };
     }
-
-    requestAnimationFrame(raf);
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className="relative h-[510vh]">
