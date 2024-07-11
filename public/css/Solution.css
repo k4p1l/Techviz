@@ -148,8 +148,8 @@ h1 #item-name {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 1em 1em;
+  align-items: first baseline;
+  padding: 1em 0em 1em 1em;
   font-size: 2em;
 }
 
@@ -225,7 +225,7 @@ h1 #item-name {
     flex: 4;
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 20px;
     transition: all 0.2s ease-in;
   }
 

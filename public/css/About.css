@@ -375,7 +375,7 @@
   .box5 img {
     height: 6em;
     width: 6em;
-    right: 20px;
-    bottom: 20px;
+    right: 1ch;
+    bottom: 10px;
   }
 }
