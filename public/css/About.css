@@ -264,7 +264,7 @@
     font-size: 0.8rem;
     flex-direction: column;
     padding: 10px;
-    padding-top: 40px;
+    padding-top: 100px;
   }
   .col1 {
     flex: 5;
@@ -355,7 +355,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     position: relative;
   }
