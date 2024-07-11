@@ -148,13 +148,14 @@ body {
   }
 
   .bottomText p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .links {
     gap: 2px;
     right: 0;
-    top: 8px;
+    top: 18px;
+    flex-direction: column;
   }
 
   .underlinee span {
@@ -167,7 +168,7 @@ body {
     height: 100%;
     top: 0%;
     object-fit: contain;
-    /* transform: scale(1.7); */
+    transform: scale(1.4);
   }
 
   .bottomText {

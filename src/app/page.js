@@ -24,17 +24,10 @@ export default function Home() {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 3.2,
-      easing: (t) => Math.min(2, 1.001 - Math.pow(2, -10 * t)),
       direction: "vertical",
       gestureDirection: "vertical",
       smooth: true,
-      mouseMultiplier: 0.5,
-      smoothTouch: false,
-      touchMultiplier: 0.8,
-      infinite: false,
     });
-
-    console.log(lenis.lerp); // Check how easing is accessed
 
     function raf(time) {
       lenis.raf(time);
