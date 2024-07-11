@@ -24,7 +24,10 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      duration: 3.2,
+      smooth: true,
+    });
 
     function raf(time) {
       lenis.raf(time);

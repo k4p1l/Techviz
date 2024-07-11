@@ -129,14 +129,15 @@
   }
 
   .infoBox {
-    width: 220px;
+    width: 180px;
     padding: 0.8em;
     text-wrap: pretty;
     left: 95%;
+    text-wrap: balance;
   }
 
   .infoBox p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 500;
     letter-spacing: normal;
     line-height: 1.4em;

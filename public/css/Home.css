@@ -155,7 +155,7 @@ body {
     gap: 2px;
     right: 0;
     top: 18px;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .underlinee span {
