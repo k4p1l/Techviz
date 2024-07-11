@@ -24,18 +24,15 @@ export default function Home() {
   });
 
   useEffect(() => {
-    if (!isMobile) {
-      const lenis = new Lenis();
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
       requestAnimationFrame(raf);
-      return () => {
-        lenis.destroy();
-      };
     }
-  }, [isMobile]);
+
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <div className="relative h-[510vh]">
@@ -120,7 +117,7 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       id="section2"
-      style={isMobile ? {} : { scale, rotate }}
+      // style={isMobile ? {} : { scale, rotate }}
       className="will-change-transform relative overflow-y-hidden overflow-x-hidden   h-[410vh]"
     >
       <Problem />
