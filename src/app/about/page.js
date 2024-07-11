@@ -80,7 +80,7 @@ const About = () => {
         </div>
 
         <div className="box5 w-full h-full bg-[#2a27e2] text-white">
-          <h1>Get in touch</h1>
+          <h1 onClick={navigateToForm}>Get in touch</h1>
           <p>
             We would love to hear from you! <br /> Whether you have any
             questions about our product, need support, or just want to give us

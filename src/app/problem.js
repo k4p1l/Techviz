@@ -15,13 +15,13 @@ const Problem = () => {
             <h3>
               Challenge of <span>Visual Impairment</span>
             </h3>
-            <p className="mb-4">
+            <p className="mb-2">
               Navigating the world without sight presents significant
               challenges.
             </p>
 
             <ul className="list-disc">
-              <li className="mb-4 pr-10">
+              <li className="mb-2 pr-10">
                 <p>
                   From avoiding obstacles to recognizing important visual cues,
                   visually impaired individuals face daily difficulties that can
@@ -37,7 +37,7 @@ const Problem = () => {
             </ul>
           </div>
           <div className="col-2">
-            <ul className="list-disc text-xl">
+            <ul className="list-disc ">
               <li>
                 <p>
                   Blind people face challenges navigating unfamiliar spaces,

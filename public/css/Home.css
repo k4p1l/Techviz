@@ -1,20 +1,28 @@
+@font-face {
+  font-family: neue_normal;
+  src: url(../../public/font/NeueMontreal-Medium.otf);
+}
+
+@font-face {
+  font-family: neue_bold;
+  src: url(../../public/font/NeueMontreal-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #0b0b0b;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: 1rem;
 }
+
 .techviz {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: -6px;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .links {
@@ -22,7 +30,7 @@ body {
   gap: 18px;
   color: rgb(241, 114, 46);
   cursor: pointer;
-  font-family: Neue Montreal;
+  font-family: "neue_normal";
   font-weight: 500;
   letter-spacing: -0.4px;
   top: 0px;
@@ -77,7 +85,7 @@ body {
 
 .btm-text {
   font-size: 0.66em;
-  font-family: "Neue Montreal";
+  font-family: "neue_normal";
   letter-spacing: -1px;
   font-weight: 500;
   margin-top: -20px;
@@ -85,7 +93,7 @@ body {
 }
 
 .btm-text span {
-  font-family: garamond;
+  font-family: "EB_Garamond";
   font-style: italic;
   padding: 0em 4px;
 }
@@ -104,7 +112,7 @@ body {
 }
 
 .bottomText p {
-  font-family: Neue Montreal;
+  font-family: "neue_bold";
   font-weight: 600;
   text-transform: uppercase;
   font-size: 0.32em;

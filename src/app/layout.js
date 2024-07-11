@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter,EB_Garamond } from "next/font/google";
 import "./globals.css";
 import PageTransition from "./PageTransition";
 
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
           defer
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         ></script>
+        
       </body>
     </html>
   );

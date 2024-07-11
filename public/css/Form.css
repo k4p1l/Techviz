@@ -7,6 +7,11 @@
   src: url(../../public/font/Product\ Sans\ Regular.ttf);
 }
 
+@font-face {
+  font-family: Arame;
+  src: url(../../public/font/Arame.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +33,7 @@
   gap: 12px;
   top: 0;
   left: 0;
-  font-family: Arame;
+  font-family: 'Arame';
   font-size: 1em;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -51,7 +56,7 @@
 }
 
 .contact-us {
-  font-family: Arame;
+  font-family: 'Arame';
   font-weight: bold;
   letter-spacing: -3px;
   text-transform: uppercase;
@@ -76,7 +81,7 @@
 }
 
 .label {
-  font-family: Arame;
+  font-family: 'Arame';
   font-size: 1.4rem;
   letter-spacing: -0.4px;
 }
@@ -89,7 +94,7 @@
   min-width: 500px;
   height: auto;
   padding: 0.6em 1em 0.6em 0.6em;
-  font-family: Arame;
+  font-family: 'Arame';
   font-size: 1.2rem;
   line-height: 1.2em;
   letter-spacing: -0.2px;

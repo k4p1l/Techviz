@@ -18,8 +18,8 @@
 
 body {
   background-color: #fff;
-  background-image: url("../../public/images/red.png");
-  background-repeat: no-repeat;
+  /* background-image: url("../../public/images/red.png");
+  background-repeat: no-repeat; */
 }
 
 .slide-in,

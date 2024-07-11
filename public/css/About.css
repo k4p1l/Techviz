@@ -2,6 +2,22 @@
   font-family: cigra;
   src: url(../../public/font/gamiliapixeldemoregular-7oj1v.otf);
 }
+
+@font-face {
+  font-family: autoscape;
+  src: url(../../public/font/AutoScape\ Medium.ttf);
+}
+
+@font-face {
+  font-family: neue_normal;
+  src: url(../../public/font/NeueMontreal-Medium.otf);
+}
+
+@font-face {
+  font-family: neue_bold;
+  src: url(../../public/font/NeueMontreal-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +73,7 @@
 }
 
 .box1 h1 span {
-  font-family: "Neue Montreal";
+  font-family: "neue_bold";
   font-size: 54px;
   font-weight: bold;
   letter-spacing: -3px;
@@ -68,7 +84,7 @@
 
 .box1 p {
   flex: 6;
-  font-family: "Neue Montreal";
+  font-family: "neue_normal";
   font-size: 20px;
   line-height: normal;
   font-weight: 500;
@@ -84,7 +100,7 @@
 .box2 h1,
 .box3 h1 {
   font-size: 40px;
-  font-family: "Neue Montreal";
+  font-family: "neue_bold";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -92,7 +108,7 @@
 
 .box2 p,
 .box3 p {
-  font-family: Arame;
+  font-family: "autoscape";
   font-size: 20px;
 }
 
@@ -113,7 +129,7 @@
 
 .box4 h1 {
   font-size: 40px;
-  font-family: "Neue Montreal";
+  font-family: "neue_bold";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -217,7 +233,7 @@
 
 .box5 h1 {
   font-size: 40px;
-  font-family: "Neue Montreal";
+  font-family: "neue_bold";
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -225,7 +241,7 @@
 }
 
 .box5 p {
-  font-family: "Neue Montreal";
+  font-family: "neue_normal";
   font-weight: 500;
   font-size: 20px;
 }
@@ -248,17 +264,17 @@
     font-size: 0.8rem;
     flex-direction: column;
     padding: 10px;
-    padding-top: 128px;
+    padding-top: 0px;
   }
   .col1 {
-    flex: 3.5;
+    flex: 3;
     gap: 1em;
     display: flex;
     flex-direction: column;
   }
 
   .col2 {
-    flex: 1;
+    flex: 6;
     gap: 1em;
     display: flex;
     flex-direction: column;
@@ -281,17 +297,18 @@
   }
 
   .box1 h1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: normal;
   }
 
   .box1 h1 span {
-    font-size: 1.8em;
+    font-size: 1.4em;
     letter-spacing: -2px;
   }
 
   .box1 p {
     font-size: 1em;
+    display: none;
   }
 
   .box2,
@@ -308,8 +325,8 @@
 
   .box2 p,
   .box3 p {
-    font-family: Autoscape;
-    font-size: 1.2em;
+    font-family: "autoscape";
+    font-size: 1em;
   }
 
   .box4 {
@@ -331,13 +348,13 @@
   }
 
   .box5 {
-    flex: 1;
+    flex: 4;
     border-radius: 20px;
     padding: 0px 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
   }
