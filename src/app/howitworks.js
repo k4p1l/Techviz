@@ -20,7 +20,7 @@ const mode2 = [
 
 const mode3 = [
   {
-    name: "Mode 3 (Combined)",
+    name: " Mode 3 (Combined)",
     info: "Combines both distance measurement and image processing to offer a comprehensive perception of the environment, enhancing safety and awareness.",
   },
 ];
