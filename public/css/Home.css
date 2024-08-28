@@ -8,6 +8,11 @@
   src: url(../../public/font/NeueMontreal-Bold.otf);
 }
 
+@font-face {
+  font-family: garamondd;
+  src: url(../../public/font/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +98,7 @@ body {
 }
 
 .btm-text span {
-  font-family: "EB_Garamond";
+  font-family: "garamondd";
   font-style: italic;
   padding: 0em 4px;
 }

@@ -29,7 +29,10 @@
 input,
 textarea,
 p,
-h1 {
+span,
+h1,
+h2,
+h3 {
   -webkit-user-select: text;
   -khtml-user-select: text;
   -moz-user-select: text;
