@@ -21,7 +21,7 @@ const Problem = () => {
             </p>
 
             <ul className="list-disc">
-              <li className="mb-2 pr-10">
+              <li className="pr-10 mb-2">
                 <p>
                   From avoiding obstacles to recognizing important visual cues,
                   visually impaired individuals face daily difficulties that can

@@ -15,7 +15,7 @@ const About = () => {
   };
   return (
     <div className="h-[110vh] a-container bg-white flex gap-4 relative ">
-      <div className="col1 w-full h-full flex flex-col">
+      <div className="flex flex-col w-full h-full col1">
         <div className="row1 w-full bg-[#eff4ff]">
           <div className="box1">
             <h1>
@@ -35,12 +35,12 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="row2 gap-4 flex h-full w-full">
+        <div className="flex w-full h-full gap-4 row2">
           <div className="box2 bg-[#09374e] text-yellow-300 ">
             <h1>Email</h1>
             <p> teamtechviz@gmail.com</p>
             <h1>Phone</h1>
-            <p>+91 9915013842</p>
+            <p>+91 99551 65091</p>
           </div>
           <div className="box3 bg-[rgb(246,248,250)] text-[#212529] ">
             <h1>Address</h1>
@@ -52,7 +52,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="col2 w-full h-full flex flex-col">
+      <div className="flex flex-col w-full h-full col2">
         <div className="box4 w-full h-full bg-[#beed3a]">
           <Link
             to="section1"

@@ -28,7 +28,8 @@
 
 input,
 textarea,
-p {
+p,
+h1 {
   -webkit-user-select: text;
   -khtml-user-select: text;
   -moz-user-select: text;
